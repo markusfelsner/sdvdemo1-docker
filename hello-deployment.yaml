@@ -8,11 +8,11 @@ spec:
   ports:
   - protocol: "TCP"
    # Port accessible inside cluster
-    port: 8880
+    port: 8888
     # Port accessible outside cluster nodePort
     nodePort: 30001
      # Port to forward to inside the pod targetpod
-    targetPort: 8888
+    #targetPort: 8888
   selector:
     app: sdvdemo
     tier: frontend
@@ -40,5 +40,5 @@ spec:
       containers:
       - image: markusfelsner/sdvdemo-kubernetes #tutum/hello-world
         name: sdvdemo
-        ports:
-          - containerPort: 8888
+        #ports:
+          #- containerPort: 8888
