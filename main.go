@@ -30,7 +30,7 @@ func main() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		rows, err := db.Query("SELECT * FROM sdvdemotabelle")
 		if err != nil {
-			fmt.Fprintf(w, "SDVDemo mit Image k8s:1.7")
+			fmt.Fprintf(w, "SDVDemo mit Image markusfelsner/frontend:1.0")
 			http.Error(w, err.Error(), http.StatusInternalServerError)
 			return
 		}
