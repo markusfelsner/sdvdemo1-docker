@@ -10,7 +10,7 @@ import (
 )
 
 const (
-	dbHost     = "sdvdemo-mysql"
+	dbHost     = "mysql-service"
 	dbPort     = 3306
 	dbUser     = "root"
 	dbPassword = "Sommer123456"
